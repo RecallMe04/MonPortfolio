@@ -1,16 +1,304 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="fr">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="Portfolio de Teddy MARTOIA - BTS SIO SLAM">
+        <meta name="author" content="Teddy MARTOIA">
+        <link rel="icon" href="favicon.ico">
+        <title>Portfolio de Tddy MARTOIA (BTS SIO 2017)</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Custom styles for this template -->
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="css/cv.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>TODO write content</div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
+                        <span class="sr-only">Navigation raccourcie</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Mon portfolio</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
+                        <li class="active"><a href="cv.html"><span class="glyphicon glyphicon-object-align-top"></span> CV</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-list-alt"></span> Réalisations <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation" class="dropdown-header">En autonomie</li>
+                                <li role="presentation"><a role="menuitem" href="#">Application Android</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Site web</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Études et analyses</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">En entreprise</li>
+                                <li role="presentation"><a role="menuitem" href="#">Projet de 1ère année</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Projet de 2ème année</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="glyphicon glyphicon-education"></span> Jury E4 BTS SIO <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="dropdown-header" role="presentation">Documentations contexte</li>
+                                <li role="presentation"><a role="menuitem" href="#">Présentation</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Application</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Missions à réaliser</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Annexes</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">Fiches d'examen</li>
+                                <li role="presentation"><a role="menuitem" href="#">Situation professionnelle n°1</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Situation professionnelle n°2</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">Démonstrations</li>
+                                <li role="presentation"><a role="menuitem" href="#">Démo SP n°1</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Démo SP n°2</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">Codes sources</li>
+                                <li role="presentation"><a role="menuitem" href="#">Sources SP n°1</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Sources SP n°2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Me contacter</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.navbar-collapse -->
+        </nav>
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row cadreCV">
+                    <div id="cv-entete" class="text-center">
+                        <div id="cv-photo">
+                            <img src="images/TeddyMartoia.jpg" alt="Ma photo d'identité" />
+                        </div>
+                        <div id="cv-intro">
+                            <h1>Bonjour, je m'appelle <span>Teddy</span> et voici mon CV</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cadreCV">
+                    <div class="col-xs-12 col-sm-7">
+                        <!-- Partie Gauche -->
+                        <div class="rubrique">
+                            <h2><span class="glyphicon glyphicon-comment"></span> En quelques mots...</h2>
+                            <p>J'ai 21 ans, j'habite Mane et je suis passionné d'informatique et de 
+                                nouvelles technologies depuis mon plus jeune âge. Je suis actuellement un 
+                                BTS Services Informatiques aux Organisations ce qui m'a décidé à aller au 
+                                delà de la passion, afin de faire de l'informatique et plus particulièrement      
+                                du développement d'applications, mon métier !
+                            </p>
+                        </div>
+                        <div class="rubrique">
+                            <h2><span class="glyphicon glyphicon-education"></span> Parcours scolaire</h2>
+                            <ul id="parcours" class="clearfix">
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2017
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>BTS SIO option SLAM (en cours...)</h3>
+                                        <p>Brevet de Technicien Supérieur "Services Informatiques aux 
+                                            Organisations", option "Solutions Logicielles et Applications 
+                                            Métiers"
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2015
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>Bac PRO SEN (EIE)</h3>
+                                        <p>Baccalauréat Professionnel "Système Electroniques et Numériques"
+                                            spécialité "Electronique Industrielle Embarqué"
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rubrique">
+                            <h2><span class="glyphicon glyphicon-briefcase"></span> 
+                                Expériences professionnelles</h2>
+                            <div class="experience clearfix">
+                                <div class="col-xs-3">
+                                    <div class="lieu">AGRA</div>
+                                    <div class="date">2017 (5 sem.)</div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <div class="profession">Developpement C# et ASP.NET</div>
+                                    <div class="details">
+                                        Appréhender la programmation de solutions web
+                                        (ASP.NET) et la programmation logiciels (C#), sous le logiciel
+                                        Visual Studio, afin de consolider mes connaissances C# et de
+                                        découvrir l’ASP.NET, en y intégrant une base de données,
+                                        directement dans Visual Studio.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience clearfix">
+                                <div class="col-xs-3">
+                                    <div class="lieu">Megachip</div>
+                                    <div class="date">Stages de BAC PRO</div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <div class="profession">Maintenance d’ordinateurs</div>
+                                    <div class="details">
+                                        (installation/configuration de systèmes d’exploitation,
+                                        montage d’ordinateurs, analyse/réparation de pannes)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-5">
+                        <!-- Partie Droite -->
+                        <div class="rubrique clearfix">
+                            <h2><span class="glyphicon glyphicon-user"></span> Me contacter</h2>
+                            <div class="meContacter">
+                                <div class="details pull-left">
+                                    <a href="mailto:ted.2000@hotmail.fr?subject=Contact depuis le CV en ligne" title="Mail de Teddy Martoia">
+                                        <img class="contact-icon" src="images/cv/mail-dreamstale47.png" alt="Icone de mail" /> Hotmail.fr
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="meContacter">
+                                <div class="details pull-left">
+                                    <a href="https://www.linkedin.com/in/teddy-martoia/" title="Lien vers le profil Linekdin de Teddy Martoia">
+                                        <img class="contact-icon" src="images/cv/linkedin-dreamstale45.png" alt="Icone de LinkedIn" /> LinkedIn
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="competences" class="rubrique">
+                            <h2><span class="glyphicon glyphicon-wrench"></span> Compétences</h2>
+                            <div class="container">
+                                <div class="libelle">Développement web</div>
+                                <div class="classement classement3"></div>
+                            </div>
+                            <div class="container">
+                                <div class="libelle">Autres langages</div>
+                                <div class="classement classement2"></div>
+                            </div>
+                            <div class="container">
+                                <div class="libelle">Base de données</div>
+                                <div class="classement classement3"></div>
+                            </div>
+                            <div class="container">
+                                <div class="libelle">Méthodes</div>
+                                <div class="classement classement2"></div>
+                            </div>
+                        </div>
+                        <div id="langues" class="rubrique">
+                            <h2><span class="glyphicon glyphicon-flag"></span> Langue</h2>
+                            <div class="container">
+                                <div class="langue">Français</div>
+                                <div class="niveau">
+                                    <span class="label label-default">A1</span>
+                                    <span class="label label-default">A2</span>
+                                    <span class="label label-default">B1</span>
+                                    <span class="label label-default">B2</span>
+                                    <span class="label label-default">C1</span>
+                                    <span class="label label-success">C2</span>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="langue">Anglais</div>
+                                <div class="niveau">
+                                    <span class="label label-default">A1</span>
+                                    <span class="label label-default">A2</span>
+                                    <span class="label label-success">B1</span>
+                                    <span class="label label-default">B2</span>
+                                    <span class="label label-default">C1</span>
+                                    <span class="label label-default">C2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rubrique">
+                            <h2><span class="glyphicon glyphicon-music"></span> Passions</h2>
+                            <div class="passion">
+                                <span class="glyphicon glyphicon-heart"></span> Musculation
+                            </div>
+                            <div class="passion">
+                                <span class="glyphicon glyphicon-heart"></span> Tennis
+                            </div>
+                            <div class="passion">
+                                <span class="glyphicon glyphicon-heart"></span> Musique
+                            </div>
+                            <div class="passion">
+                                <span class="glyphicon glyphicon-heart"></span> Voyages
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Étudiant du CNED</h2>
+                        <p>J'ai choisi de suivre le BTS SIO à distance par le Centre
+                            National d'Enseignement à Distance car je souhaitais 
+                            pourvoir avancer à mon rythme, choisir moi même mon 
+                            emploi du temps, apprendre à être autonome, pouvoir 
+                            utiliser les outils de collaboration à distance et 
+                            devenir plus responsable en étant capable de me fixer
+                            moi même des contraintes, des limites et des objectifs
+                            à atteindre !
+                        </p>
+                        <p><a class="btn btn-default" href="http://www.cned.fr" target="_blank" role="button">En savoir plus &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Le BTS SIO</h2>
+                        <p>Passionné d'informatique depuis mon plus jeune âge, j'aime
+                            apprendre à faire de nouvelles choses avec mon ordinateur,
+                            mon smartphone ou ma tablette.
+                            Mais j'aimerais maintenant passer au niveau au dessus
+                            Après mon bac, le BTS SIO s'est présenté comme une évidence.
+                            Avec 62% d'Informatique "pure",15% d'Économie, management 
+                            et droit de l’informatique, 8% d'Anglais, 8% de culture générale
+                            et 7% de Maths, je savais que cette formation allait me mettre 
+                            le pied à l'étrier pour poursuivre ensuite dans cette voie 
+                            et devenir informaticien !                            
+                        </p>
+                        <p><a class="btn btn-default" href="https://fr.wikipedia.org/wiki/Brevet_de_technicien_sup%C3%A9rieur_-_Services_informatiques_aux_organisations" target="_blank" role="button">En savoir plus &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Option B SLAM</h2>
+                        <p>En fin de premier semestre, on doit choisir notre option.
+                            "Solutions Logicielles et Applications Métiers" est
+                            l'option qui m'a séduit&nbsp;! Travailler en équipe 
+                            à la satisfaction de besoins d'un client, définir des
+                            spécifications, faire des tests, corriger des bugs, 
+                            faire de la maintenance... tout en apprennant les bases
+                            du métier de développeur :  modélisation des données 
+                            avec Merise et UML, programmation objet avec Java, C# 
+                            et PHP, conception de bases de données sous PostgreSQL
+                            et MySQL, réalisation de composants logicielles avec
+                            Symfony, gestion de projet, méthodes agiles... J'étais
+                            sûr que ça serait fait pour moi !
+                        </p>
+                        <p><a class="btn btn-default" href="http://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/BTS-Services-informatiques-aux-organisations-option-B-solutions-logicielles-et-applications-metiers" target="_blank" role="button">En savoir plus &raquo;</a></p>
+                    </div>
+                </div>
+                <hr>
+                <p id="copyright">&copy; Teddy Martoia 2017</p>
+            </div> <!-- /container -->
+        </footer>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     </body>
 </html>
